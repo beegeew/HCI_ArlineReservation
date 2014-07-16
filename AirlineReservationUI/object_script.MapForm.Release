@@ -1,0 +1,12 @@
+INPUT(
+./release\mainwindow.o
+./release\main.o
+./release\reservationdata.o
+./release\flightdata.o
+./release\creditcardform.o
+./release\coloredstateslabel.o
+./release\moc_mainwindow.o
+./release\moc_creditcardform.o
+./release\moc_coloredstateslabel.o
+./release\qrc_map2.o
+);

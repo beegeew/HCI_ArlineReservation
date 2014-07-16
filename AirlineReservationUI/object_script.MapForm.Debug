@@ -1,0 +1,12 @@
+INPUT(
+./debug\mainwindow.o
+./debug\main.o
+./debug\reservationdata.o
+./debug\flightdata.o
+./debug\creditcardform.o
+./debug\coloredstateslabel.o
+./debug\moc_mainwindow.o
+./debug\moc_creditcardform.o
+./debug\moc_coloredstateslabel.o
+./debug\qrc_map2.o
+);

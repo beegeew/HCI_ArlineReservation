@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>769</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>769</width>
+    <height>670</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>769</width>
+    <height>670</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>We Fly U Reservation System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="flightInfoGropBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>511</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>General Flight Info</string>
+    </property>
+    <widget class="QCalendarWidget" name="departingCalendar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>191</width>
+       <height>155</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>2011</year>
+       <month>10</month>
+       <day>7</day>
+      </date>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>2012</year>
+       <month>10</month>
+       <day>7</day>
+      </date>
+     </property>
+     <property name="gridVisible">
+      <bool>true</bool>
+     </property>
+     <property name="verticalHeaderFormat">
+      <enum>QCalendarWidget::NoVerticalHeader</enum>
+     </property>
+    </widget>
+    <widget class="QCalendarWidget" name="ReturnCal">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>120</y>
+       <width>191</width>
+       <height>155</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>2011</year>
+       <month>10</month>
+       <day>8</day>
+      </date>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>2012</year>
+       <month>10</month>
+       <day>8</day>
+      </date>
+     </property>
+     <property name="gridVisible">
+      <bool>true</bool>
+     </property>
+     <property name="verticalHeaderFormat">
+      <enum>QCalendarWidget::NoVerticalHeader</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DepartLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Depart From:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="departCBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Choose a State..</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alabama</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alaska</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Arizona</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Arkansas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>California</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Colorado</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Connecticut</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Delaware</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>District of Columbia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Florida</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Georgia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hawaii</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Idaho</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Illinois</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Indiana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Iowa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kansas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kentucky</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Louisiana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Maine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Maryland</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Massachusetts</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Michigan</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Minnesota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mississippi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Missouri</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Montana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nebraska</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nevada</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Hampshire</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Jersey</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Mexico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New York</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>North Carolina</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>North Dakota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ohio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oklahoma</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oregon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pennsylvania</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rhode Island</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>South Carolina</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>South Dakota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tennessee</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Texas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Utah</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vermont</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Virginia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Washington</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>West Virginia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wisconsin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wyoming</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="departDateLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Departure Date:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="arriveLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Arrive In:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ArriveCBox">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>60</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Choose a State..</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alabama</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alaska</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Arizona</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Arkansas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>California</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Colorado</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Connecticut</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Delaware</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>District of Columbia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Florida</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Georgia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hawaii</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Idaho</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Illinois</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Indiana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Iowa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kansas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kentucky</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Louisiana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Maine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Maryland</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Massachusetts</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Michigan</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Minnesota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mississippi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Missouri</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Montana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nebraska</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nevada</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Hampshire</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Jersey</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Mexico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New York</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>North Carolina</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>North Dakota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ohio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oklahoma</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Oregon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pennsylvania</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rhode Island</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>South Carolina</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>South Dakota</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tennessee</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Texas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Utah</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vermont</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Virginia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Washington</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>West Virginia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wisconsin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wyoming</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="arriveDateLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Return Date:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="roundTripRadio">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>260</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Round Trip</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="oneWayLabel">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>240</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>One Way</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="flightTypeLabel">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Flight Type:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="reserveSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>170</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>3</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>0</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear Location Selections</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="seatLabel">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reserved Seats:</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="mapGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>511</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Map</string>
+    </property>
+    <widget class="coloredStatesLabel" name="mapLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>471</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="map2.qrc">:/usmap</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse</set>
+     </property>
+    </widget>
+    <widget class="coloredStatesLabel" name="colormap">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>471</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>471</width>
+       <height>301</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>471</width>
+       <height>301</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::NoTextInteraction</set>
+     </property>
+    </widget>
+    <zorder>colormap</zorder>
+    <zorder>mapLabel</zorder>
+   </widget>
+   <widget class="QGroupBox" name="suggestionGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>30</y>
+      <width>361</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="title">
+     <string>Suggested Flights</string>
+    </property>
+    <widget class="QTextEdit" name="suggestionTextBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>341</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::NoTextInteraction</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="summaryGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>210</y>
+      <width>231</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Reservation Summary</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Departing From:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Arriving In:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>100</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Return Date:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sumDepartDateLabel">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Departure Date:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seats Reserved:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="resetAllButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>211</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset All Options And Start Over</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DepartDate">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DepartLocation">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Destination">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ReturnDate">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>120</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Seats">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Flight Type:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typeFlight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Cost:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TotalCost">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DepartFlightInfo">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Departure Flight #</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="departFlightNo">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>80</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ReturnFlightInfo">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>140</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Return Flight #</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ReturnFlightNo">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>160</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>550</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Payment </string>
+    </property>
+    <widget class="QPushButton" name="confirmationButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirm and Proceed to Checkout</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cctype">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Card Type:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="visa">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Visa</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="master">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mastercard</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="disc">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Discover</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>10</y>
+      <width>511</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Please note: All times listed are in CDT - We hope you enjoy our long scenic flights! </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>160</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="custNameField">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>180</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>160</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reservation Number:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resNum">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>180</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>coloredStatesLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">coloredstateslabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton</tabstop>
+  <tabstop>departCBox</tabstop>
+  <tabstop>ArriveCBox</tabstop>
+  <tabstop>departingCalendar</tabstop>
+  <tabstop>ReturnCal</tabstop>
+  <tabstop>reserveSpinBox</tabstop>
+  <tabstop>oneWayLabel</tabstop>
+  <tabstop>roundTripRadio</tabstop>
+  <tabstop>resetAllButton</tabstop>
+  <tabstop>visa</tabstop>
+  <tabstop>master</tabstop>
+  <tabstop>disc</tabstop>
+  <tabstop>confirmationButton</tabstop>
+  <tabstop>suggestionTextBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="map2.qrc"/>
+ </resources>
+ <connections/>
+</ui>

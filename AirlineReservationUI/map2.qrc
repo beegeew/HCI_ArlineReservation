@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="cc">1317789508_credit_cards.png</file>
+        <file alias="usmap">US_map.png</file>
+        <file alias="usmapunderlay">US_map51colors.png</file>
+    </qresource>
+</RCC>
